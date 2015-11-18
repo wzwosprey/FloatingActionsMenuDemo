@@ -31,7 +31,7 @@ public class FloatingActionMenu extends ViewGroup {
     public static final int EXPAND_LEFT = 2;
     public static final int EXPAND_RIGHT = 3;
 
-    private static final int ANIMATION_DURATION = 300;//动画持续时间（毫秒）
+    private static final int ANIMATION_DURATION = 300;//动画持续时间（毫秒ms）
     private AnimatorSet mExpandAnimation = new AnimatorSet().setDuration(ANIMATION_DURATION);
     private AnimatorSet mCollapseAnimation = new AnimatorSet().setDuration(ANIMATION_DURATION);
 
@@ -129,6 +129,7 @@ public class FloatingActionMenu extends ViewGroup {
             }
         }
     }
+
 
     public void collapse() {
         collapse(false);
